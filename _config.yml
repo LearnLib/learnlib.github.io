@@ -29,12 +29,6 @@ permalink: /:path
 
 # Build settings
 #theme: minima
-plugins:
-  - jekyll-autoprefixer
-
-autoprefixer:
-  browsers:
-    - last 5 versions
 
 sass:
   style: compressed
