@@ -30,6 +30,9 @@ permalink: /:path
 # Build settings
 #theme: minima
 
+plugins:
+  - jekyll-seo-tag
+
 sass:
   style: compressed
 
