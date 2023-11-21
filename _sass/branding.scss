@@ -1,0 +1,33 @@
+.site-branding {
+  margin: 0;
+}
+
+.site-branding .site-title {
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+}
+
+.site-branding .site-title a {
+  border-radius: 0.25rem;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #fff;
+  padding: .25rem .75rem;
+  background: $primary;
+  text-decoration: none;
+}
+
+.site-branding .site-description {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.site-branding .site-description span {
+  border-radius: 0.25rem;
+  padding: .1rem .75rem;
+  background: #c3456d;
+  display: inline-block;
+  margin-top: .15rem;
+}

@@ -1,0 +1,14 @@
+- title: Projects
+  items:
+    - title: LearnLib
+      url: /
+    - title: AutomataLib
+      url: /pages/automatalib
+    - title: ALEX
+      url: /pages/alex
+- title: News
+  url: /pages/news
+- title: Resources
+  items:
+    - title: Version History
+      url: /pages/version-history

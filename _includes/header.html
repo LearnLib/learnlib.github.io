@@ -1,0 +1,50 @@
+<header id="site-header">
+    <div class="container d-lg-flex" style="padding-top: 3rem; padding-bottom: 3rem;">
+        <div class="site-branding me-auto align-self-md-center" style="padding: 4rem 0">
+
+            <h1 class="site-title">
+                <a href="{% link index.md %}" rel="home">{{ site.title }}</a>
+            </h1>
+
+            <p class="site-description">
+                <span>{{ site.description }}</span>
+            </p>
+        </div>
+
+        <div class="d-none d-lg-block align-self-md-center">
+            <img src="{{ '/assets/images/learning.png' | relative_url }}">
+        </div>
+    </div>
+
+    <nav id="site-navigation">
+        <div class="container">
+            <div id="menu-wrapper" class="collapse show">
+                <ul id="menu-header" class="menu">
+                    {% for entry in site.data.navigation %}
+                    {% if entry.items[0] %}
+                    <li class="menu-item menu-item-has-children{% if page.navbar-group == entry.title 0 %} current-menu-item current-menu-ancestor current-menu-parent current_page_ancestor{% endif %}">
+                        <a href="{{ entry.items[0].url | relative_url }}">{{ entry.title }}</a>
+                        <div class="sub-menu-wrapper">
+                            <div class="container">
+                                <ul class="sub-menu navbar-nav">
+                                    {% for item in entry.items %}
+                                    <li>
+                                        <a class="menu-item{% if item.url == page.url %} current-menu-item current_page_item current_page_parent{% endif %}"
+                                           href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    {% else %}
+                    <li class="menu-item{% if entry.url == page.url %} current-menu-item current_page_item current_page_parent{% endif %}">
+                        <a href="{{ entry.url | relative_url }}">{{ entry.title }}</a>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

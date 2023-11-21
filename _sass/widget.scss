@@ -1,0 +1,54 @@
+.widget {
+  margin-bottom: 2rem;
+  padding: 1rem 1rem 0 1rem;
+  background: #ffffff;
+  border: 1px solid #b7b7b7;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgb(183, 183, 183);
+  border-radius: 4px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+  border-top: 3px solid $secondary;
+}
+
+.widget.widget-unstyled {
+  padding: 0;
+  box-shadow: none;
+  background: none;
+  border: 0;
+}
+
+.widget .widget-title {
+  padding: 0;
+  font-size: .9rem;
+  margin: 0 0 1rem 0;
+  color: #242c2e;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.widget_github a {
+  border-radius: 0.25rem;
+  display: block;
+  padding: 1.5rem;
+  background: #191f29;
+  color: #fff;
+}
+
+.widget ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.widget ul li {
+  padding: .25rem 0;
+  border-bottom: 1px solid #e8ecf1;
+}
+
+.widget ul li:last-of-type {
+  border-bottom: none;
+}
+
+.widget ul li a {
+  display: block;
+}

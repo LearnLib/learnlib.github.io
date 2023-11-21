@@ -1,0 +1,67 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+body {
+  color: #3e3e3e;
+  background: #202831;
+}
+
+#site-header {
+  background: url("/assets/images/header-soft.jpg");
+  background-size: cover;
+}
+
+#content {
+  background: #fff;
+  padding: 3rem 0;
+}
+
+#content h2:first-of-type {
+  margin-top: 0;
+}
+
+#content h2:not(:first-of-type) {
+  padding-top: 2rem;
+  border-top: 2px solid #eaecef;
+  margin-top: 2.5rem;
+}
+
+#site-footer {
+  background: #262f38;
+  color: #89939e;
+}
+
+#site-footer nav {
+  padding: 1rem 0;
+}
+
+#site-footer a {
+  color: #ccc;
+}
+
+#site-footer .tu-link {
+  padding: .5rem 0;
+}
+
+#menu-footer .nav-link {
+  padding: .5rem 2rem .5rem 0;
+}
+
+#copyright {
+  padding: 1rem 0;
+  background: #202831;
+}
+
+table {
+  @extend .table;
+}
+
+table.releases {
+  font-size: .85rem;
+}
+
+img {
+  @extend .img-fluid;
+}
