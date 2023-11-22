@@ -8,6 +8,14 @@ body {
   background: #202831;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 #site-header {
   background: url("/assets/images/header-soft.jpg");
   background-size: cover;
