@@ -12,7 +12,17 @@ layout: default
                 {{ post.title | escape }}
             </a>
         </h2>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <p>
+            <span>{{ post.date | date: date_format }}</span>
+            {%- if post.author -%}
+                {% for author in post.author %}
+                {%- if forloop.first == true %} • {% endif -%}
+                <span>{{ author }}</span>
+                {%- if forloop.last == false %}, {% endif -%}
+            {% endfor %}
+            {%- endif -%}
+        </p>
+
         <p style="font-style: italic;">{{ post.content | strip_html | truncatewords: 50 }}</p>
     {%- endfor -%}
 {%- endif -%}
