@@ -1,6 +1,6 @@
 # learnlib.github.io
 
-The source code to the [learnlib.de](https://learnlib.de/) website.
+The source code of the [learnlib.de](https://learnlib.de/) website.
 
 ## Build instructions
 
