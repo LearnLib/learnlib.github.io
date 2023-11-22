@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "ALEX"
 sidebar: alex
 navbar-group: "Projects"
