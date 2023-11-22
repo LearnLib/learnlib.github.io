@@ -1,55 +1,100 @@
-.features,
-.feature,
-.feature__items {
-  display: flex;
-  gap: .5rem;
-}
+@import "bootstrap/variables";
 
-.feature {
+// Variables
+$box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+$border-radius: 0.5rem;
+
+$purple-gradient: linear-gradient(0deg, rgba(117, 60, 199, 1) 0%, rgba(191, 139, 230, 1) 100%);
+$green-gradient: linear-gradient(0deg, rgba(84, 166, 33, 1) 0%, rgba(161, 217, 64, 1) 100%);
+$orange-gradient: linear-gradient(0deg, rgba(227, 138, 16, 1) 0%, rgba(240, 173, 9, 1) 100%);
+
+.features {
+  display: flex;
   flex-direction: column;
-}
-
-.feature__header,
-.feature__item {
-  color: #fff;
-  box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
-  padding: 1.25rem;
-  font-weight: 700;
-  border-radius: .5rem;
-  text-align: center;
-  font-size: 1.125rem;
-  white-space: nowrap;
-}
-
-.feature__items {
-  flex-grow: 1;
   align-items: stretch;
-}
+  gap: 0.5rem;
 
-.feature__item {
-  flex-grow: 1;
-  writing-mode: vertical-lr;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 2px;
-}
+  @media (min-width: map-get($grid-breakpoints, "sm")) {
+    flex-direction: row;
+  }
 
-.feature__item span {
-  transform: scale(-1, -1);
-}
+  .feature,
+  .feature__items {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: stretch;
+  }
 
-.feature--learning-algorithms .feature__header,
-.feature--learning-algorithms .feature__item {
-  background: linear-gradient(0deg, rgba(117,60,199,1) 0%, rgba(191,139,230,1) 100%);
-}
+  .feature {
+    &.feature--learning-algorithms {
+      .feature__header,
+      .feature__item {
+        background: $purple-gradient;
+      }
+    }
 
-.feature--equivalence-queries .feature__header,
-.feature--equivalence-queries .feature__item {
-  background: linear-gradient(0deg, rgba(84,166,33,1) 0%, rgba(161,217,64,1) 100%);
-}
+    &.feature--equivalence-queries {
+      .feature__header,
+      .feature__item {
+        background: $green-gradient;
+      }
+    }
 
-.feature--infrastructure .feature__header,
-.feature--infrastructure .feature__item {
-  background: linear-gradient(0deg, rgba(227,138,16,1) 0%, rgba(240,173,9,1) 100%);
+    &.feature--infrastructure {
+      .feature__header,
+      .feature__item {
+        background: $orange-gradient;
+      }
+    }
+  }
+
+  .feature__items {
+    @media (min-width: map-get($grid-breakpoints, "sm")) {
+      flex-direction: row;
+    }
+  }
+
+  .feature__header,
+  .feature__item {
+    display: flex;
+    color: #fff;
+    box-shadow: $box-shadow;
+    font-weight: 700;
+    border-radius: $border-radius;
+    font-size: 1rem;
+  }
+
+  .feature__header {
+    justify-content: start;
+    padding: 0.75rem 1.25rem;
+
+    @media (min-width: map-get($grid-breakpoints, "sm")) {
+      justify-content: center;
+      padding: 1.25rem 0;
+    }
+  }
+
+  .feature__item {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 2rem;
+    opacity: 0.8;
+    padding: 0.75rem 1.25rem;
+
+    @media (min-width: map-get($grid-breakpoints, "sm")) {
+      writing-mode: vertical-lr;
+      margin-left: 0;
+      opacity: 1;
+      justify-content: center;
+      padding: 1.25rem 0;
+
+      span {
+        transform: scale(-1, -1);
+      }
+    }
+  }
 }
