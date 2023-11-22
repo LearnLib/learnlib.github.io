@@ -19,5 +19,6 @@ Further, we also published some papers that demonstrate ALEX:
 
 - [ALEX: Mixed-Mode Learning of Web Applications at Ease](https://link.springer.com/chapter/10.1007/978-3-319-47169-3_51)
 - [Model-Based Testing Without Models: The TodoMVC Case Study](https://link.springer.com/chapter/10.1007/978-3-319-68270-9_7)
+- [Lifelong Learning of Reactive Systems in Practice](https://link.springer.com/chapter/10.1007/978-3-031-08166-8_3)
 
-If you want more information on ALEX or want to know how to use it, head over to our [homepage](http://learnlib.github.io/alex/), the [user manual](http://learnlib.github.io/alex/book/2.1.0/index.html) or go directly to the [GitHub project page](https://github.com/LearnLib/alex).
+If you want more information on ALEX or want to know how to use it, head over to our [homepage](http://learnlib.github.io/alex/), the [user manual](http://learnlib.github.io/alex/book/) or go directly to the [GitHub project page](https://github.com/LearnLib/alex).
