@@ -35,6 +35,13 @@
   color: #fff;
 }
 
+.widget_github a i {
+  text-decoration: none;
+  padding-right: 1rem;
+  float: left;
+  margin-top: -0.7rem;
+}
+
 .widget ul {
   list-style-type: none;
   padding: 0;
@@ -47,8 +54,4 @@
 
 .widget ul li:last-of-type {
   border-bottom: none;
-}
-
-.widget ul li a {
-  display: block;
 }

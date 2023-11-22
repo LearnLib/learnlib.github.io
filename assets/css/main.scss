@@ -1,11 +1,7 @@
 ---
 ---
-// @import "bootstrap/mixins/banner";
-// @include bsBanner("");
 
-// Configuration
-@import "bootstrap/functions";
-
+// Bootstrap
 $primary: #597ad8;
 $secondary: #da5a6d;
 $grid-breakpoints: (
@@ -24,6 +20,11 @@ $container-max-widths: (
 //   xxl: 1320px // omit xxl breakpoint
 );
 
+// @import "bootstrap/mixins/banner";
+// @include bsBanner("");
+
+// Configuration
+@import "bootstrap/functions";
 @import "bootstrap/variables";
 @import "bootstrap/variables-dark";
 @import "bootstrap/maps";
@@ -69,6 +70,18 @@ $container-max-widths: (
 // Utilities
 @import "bootstrap/utilities/api";
 // scss-docs-end import-stack
+
+
+// FontAwesome3
+$FontAwesomePath: "/assets/webfonts";
+@import "fontawesome/variables";
+@import "fontawesome/mixins";
+@import "fontawesome/path";
+@import "fontawesome/core";
+// @import "fontawesome/bootstrap";
+// @import "fontawesome/extras";
+@import "fontawesome/icons";
+
 
 // Custom code
 @import "base";

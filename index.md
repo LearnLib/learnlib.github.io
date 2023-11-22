@@ -8,7 +8,7 @@ navbar-group: "Projects"
 ## Learnlib
 
 LearnLib is a free and open source ([Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)) Java framework for automata learning.
-It is mainly being developed at the [Chair for Programming Systems](http://ls5-www.cs.tu-dortmund.de/) at [TU Dortmund University, Germany](http://www.tu-dortmund.de/).
+It is mainly being developed at the [Chair of Programming Systems](http://ls5-www.cs.tu-dortmund.de/) at [TU Dortmund University, Germany](http://www.tu-dortmund.de/).
 20 years of research in the field of automated learning as well as our experience in engineering software have gone into the development of LearnLib.
 
 ## Usage
