@@ -1,6 +1,8 @@
 ---
+layout: post
 title: "Open source release of LearnLib"
 date: "2013-05-25"
+navbar-group: "News"
 categories:
   - "pages"
   - "news"

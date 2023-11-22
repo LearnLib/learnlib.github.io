@@ -38,7 +38,7 @@
                         </div>
                     </li>
                     {% else %}
-                    <li class="menu-item{% if entry.url == page.url %} current-menu-item current_page_item current_page_parent{% endif %}">
+                    <li class="menu-item{% if page.navbar-group == entry.title %} current-menu-item current_page_item current_page_parent{% endif %}">
                         <a href="{{ entry.url | relative_url }}">{{ entry.title }}</a>
                     </li>
                     {% endif %}

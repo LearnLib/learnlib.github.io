@@ -1,6 +1,8 @@
 ---
+layout: post
 title: "LearnLib revival - Release 0.13.0"
 date: "2018-03-02"
+navbar-group: "News"
 categories:
   - "pages"
   - "news"

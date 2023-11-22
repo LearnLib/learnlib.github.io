@@ -1,6 +1,8 @@
 ---
+layout: post
 title: "LearnLib 0.15.0 and AutomataLib 0.9.0 release"
 date: "2020-02-06"
+navbar-group: "News"
 categories:
   - "pages"
   - "news"
