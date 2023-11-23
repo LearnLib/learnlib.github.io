@@ -1,24 +1,31 @@
 ---
 ---
 
-// Bootstrap
+// Bootstrap 5.3.2
 $primary: #597ad8;
-$secondary: #da5a6d;
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-//   xxl: 1400px // omit xxl breakpoint
-);
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-//   xxl: 1320px // omit xxl breakpoint
-);
+$secondary: #c3456d;
+$tertiary: #191f29;
+
+$border-radius: .25rem;
+
+$enable-caret:                false !default;
+$enable-rounded:              true !default;
+$enable-shadows:              false !default;
+$enable-gradients:            false !default;
+$enable-transitions:          true !default;
+$enable-reduced-motion:       true !default;
+$enable-smooth-scroll:        true !default;
+$enable-grid-classes:         true !default;
+$enable-container-classes:    true !default;
+$enable-cssgrid:              false !default;
+$enable-button-pointers:      false !default;
+$enable-rfs:                  true !default;
+$enable-validation-icons:     false !default;
+$enable-negative-margins:     false !default;
+$enable-deprecation-messages: false !default;
+$enable-important-utilities:  false !default;
+
+$enable-dark-mode:            false !default;
 
 // @import "bootstrap/mixins/banner";
 // @include bsBanner("");
@@ -26,7 +33,13 @@ $container-max-widths: (
 // Configuration
 @import "bootstrap/functions";
 @import "bootstrap/variables";
-@import "bootstrap/variables-dark";
+// @import "bootstrap/variables-dark";
+
+$theme-colors: map-remove($theme-colors, "success", "info", "warning", "danger", "light", "dark");
+// omit xxl layout
+$grid-breakpoints: map-remove($grid-breakpoints, "xxl");
+$container-max-widths: map-remove($container-max-widths, "xxl");
+
 @import "bootstrap/maps";
 @import "bootstrap/mixins";
 @import "bootstrap/utilities";
@@ -45,7 +58,7 @@ $container-max-widths: (
 // @import "bootstrap/dropdown";
 // @import "bootstrap/button-group";
 @import "bootstrap/nav";
-@import "bootstrap/navbar";
+// @import "bootstrap/navbar";
 // @import "bootstrap/card";
 // @import "bootstrap/accordion";
 // @import "bootstrap/breadcrumb";
@@ -80,8 +93,9 @@ $FontAwesomePath: "/assets/webfonts";
 @import "fontawesome/core";
 // @import "fontawesome/bootstrap";
 // @import "fontawesome/extras";
-@import "fontawesome/icons";
-
+// @import "fontawesome/icons";
+// currently we only really need the github icon, so skip the other icons
+.icon-github:before { content: $github; }
 
 // Custom code
 @import "base";

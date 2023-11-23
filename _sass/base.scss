@@ -1,11 +1,5 @@
-html {
-  font-family: sans-serif;
-  line-height: 1.15;
-}
-
 body {
-  color: #3e3e3e;
-  background: #202831;
+  background: $tertiary;
 }
 
 a {
@@ -38,13 +32,30 @@ img {
   @extend .img-fluid;
 }
 
+pre {
+  padding: 0.5rem;
+  background-color: $gray-200;
+  @extend .rounded;
+}
+
+pre > code {
+  padding: 0;
+}
+
+code {
+  padding: 0.2rem 0.4rem;
+  background-color: $gray-200;
+  @extend .highlight;
+  @extend .rounded;
+}
+
 #site-header {
   background: url("/assets/images/header-soft.jpg");
   background-size: cover;
 }
 
 #content {
-  background: #fff;
+  background: $body-bg;
   padding: 3rem 0;
 }
 
@@ -54,13 +65,13 @@ img {
 
 #content h2:not(:first-of-type) {
   padding-top: 2rem;
-  border-top: 2px solid #eaecef;
+  border-top: 2px solid $border-color;
   margin-top: 2.5rem;
 }
 
 #site-footer {
-  background: #262f38;
-  color: #89939e;
+  background: lighten($tertiary, 3%);
+  color: $gray-600;
 }
 
 #site-footer nav {
@@ -68,7 +79,11 @@ img {
 }
 
 #site-footer a {
-  color: #ccc;
+  color: $gray-400;
+}
+
+#site-footer p {
+  margin-bottom: 0;
 }
 
 #site-footer .tu-link {
@@ -80,6 +95,6 @@ img {
 }
 
 #copyright {
-  padding: 1rem 0;
-  background: #202831;
+  padding: 1.5rem 0;
+  background: $tertiary;
 }
