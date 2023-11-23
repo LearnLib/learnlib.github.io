@@ -11,7 +11,7 @@ See [Imprint]({% link pages/imprint.md %}).
 
 #### Data collection
 
-This website consists entirely of static documents which do not (or cannot) collect, store or process any personal data.
+This website consists entirely of static documents which do not (and cannot) collect, store or process any personal data.
 
 #### Hosting
 
