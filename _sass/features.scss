@@ -19,7 +19,7 @@ $orange-gradient: linear-gradient(0deg, rgba(227, 138, 16, 1) 0%, rgba(240, 173,
   }
 
   .feature,
-  .feature__items {
+  .feature-items {
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
@@ -28,36 +28,36 @@ $orange-gradient: linear-gradient(0deg, rgba(227, 138, 16, 1) 0%, rgba(240, 173,
   }
 
   .feature {
-    &.feature--learning-algorithms {
-      .feature__header,
-      .feature__item {
+    &.feature-learning-algorithms {
+      .feature-header,
+      .feature-item {
         background: $purple-gradient;
       }
     }
 
-    &.feature--equivalence-queries {
-      .feature__header,
-      .feature__item {
+    &.feature-equivalence-queries {
+      .feature-header,
+      .feature-item {
         background: $green-gradient;
       }
     }
 
-    &.feature--infrastructure {
-      .feature__header,
-      .feature__item {
+    &.feature-infrastructure {
+      .feature-header,
+      .feature-item {
         background: $orange-gradient;
       }
     }
   }
 
-  .feature__items {
+  .feature-items {
     @media (min-width: map-get($grid-breakpoints, "sm")) {
       flex-direction: row;
     }
   }
 
-  .feature__header,
-  .feature__item {
+  .feature-header,
+  .feature-item {
     display: flex;
     color: #fff;
     box-shadow: $box-shadow;
@@ -66,7 +66,7 @@ $orange-gradient: linear-gradient(0deg, rgba(227, 138, 16, 1) 0%, rgba(240, 173,
     font-size: 1rem;
   }
 
-  .feature__header {
+  .feature-header {
     justify-content: start;
     padding: 0.75rem 1.25rem;
 
@@ -76,7 +76,7 @@ $orange-gradient: linear-gradient(0deg, rgba(227, 138, 16, 1) 0%, rgba(240, 173,
     }
   }
 
-  .feature__item {
+  .feature-item {
     flex-grow: 1;
     display: flex;
     align-items: center;
