@@ -40,9 +40,6 @@
 
 #site-navigation .current_page_ancestor .current-menu-item {
   font-weight: 700;
-}
-
-#site-navigation .current_page_ancestor .current-menu-item a {
   color: $light;
 }
 
@@ -80,6 +77,9 @@
 #site-navigation .sub-menu-wrapper .sub-menu a {
   padding: .5rem .75rem;
   display: block;
+}
+
+#site-navigation .current-menu-ancestor .sub-menu-wrapper a {
   @extend .rounded;
 }
 

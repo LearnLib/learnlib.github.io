@@ -23,14 +23,14 @@
                 <ul id="menu-header" class="menu">
                     {% for entry in site.data.navigation %}
                     {% if entry.items[0] %}
-                    <li class="menu-item menu-item-has-children{% if page.navbar-group == entry.title %} current-menu-item current-menu-ancestor current-menu-parent current_page_ancestor{% endif %}">
+                    <li class="menu-item menu-item-has-children{% if page.navbar-group == entry.title %} current-menu-ancestor current_page_ancestor{% endif %}">
                         <a href="{{ entry.items[0].url | relative_url }}">{{ entry.title }}</a>
                         <div class="sub-menu-wrapper">
                             <div class="container">
                                 <ul class="sub-menu">
                                     {% for item in entry.items %}
                                     <li>
-                                        <a class="menu-item{% if item.url == page.url %} current-menu-item current_page_item current_page_parent{% endif %}"
+                                        <a class="menu-item{% if item.url == page.url %} current-menu-item{% endif %}"
                                            href="{{ item.url | relative_url }}">{{ item.title }}</a>
                                     </li>
                                     {% endfor %}
