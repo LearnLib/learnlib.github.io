@@ -11,4 +11,4 @@ You may either follow the [GitHub Pages documentation](https://docs.github.com/e
 * In the main repository folder, run `bundle config set --local path '~/.local/share/gem'`
 * In the main repository folder, run `bundle install`
 * Add `~/.local/share/gem/ruby/3.0.0/bin` (path may change due to your ruby version) to your `$PATH` variable.
-* In the main repository folder run `jekyll serve` to build the page locally.
+* In the main repository folder, run `jekyll serve` to build the page locally.
