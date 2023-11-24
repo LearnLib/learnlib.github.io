@@ -5,7 +5,7 @@ sidebar: alex
 navbar-group: "Projects"
 ---
 
-![ALEX]({{ 'assets/images/alex.jpg' | relative_url}}){: .img-fluid .rounded}
+![ALEX]({{ 'assets/images/alex.jpg' | relative_url}}){: .rounded}
 
 ## ALEX
 
