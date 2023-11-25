@@ -1,6 +1,8 @@
 ---
 layout: default
 title: "ALEX"
+description: "An open tool for testing and learning web applications via active automata learning"
+image: "/assets/images/alex.png"
 sidebar: alex
 navbar-group: "Projects"
 ---

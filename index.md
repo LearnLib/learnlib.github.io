@@ -1,6 +1,6 @@
 ---
 layout: default
-title: LearnLib
+title: "LearnLib"
 sidebar: learnlib
 navbar-group: "Projects"
 ---

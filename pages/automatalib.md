@@ -1,6 +1,8 @@
 ---
 layout: default
 title: "AutomataLib"
+description: "An open library for modeling automata, graphs, and transition systems"
+image: "/assets/images/automatalib.svg"
 sidebar: automatalib
 navbar-group: "Projects"
 ---

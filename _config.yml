@@ -21,14 +21,11 @@
 title: LearnLib
 email: info@learnlib.de
 description: An open framework for automata learning
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
+baseurl: ""
+url: "https://learnlib.de"
+logo: "/assets/images/learnlib.svg"
 github_username:  LearnLib
 permalink: /:categories/:path
-
-# Build settings
-#theme: minima
 
 plugins:
   - jekyll-seo-tag
