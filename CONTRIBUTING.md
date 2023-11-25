@@ -8,6 +8,7 @@ This document lists some advice that you should read and follow in order to meet
 ## Naming conventions
 
 * Please add new pages to the `pages` directory so that the generated URLs do not conflict with project-specific site deployments (such as [learnlib.github.io/alex](https://learnlib.github.io/alex), etc.).
+* For the same reason, posts should declare `pages` as their first category because the categories are used in the construction of post URLs.
 
 ## Technology conventions
 
