@@ -12,3 +12,5 @@
   items:
     - title: Version History
       url: /pages/version-history
+    - title: Tools using LearnLib
+      url: /pages/tools
