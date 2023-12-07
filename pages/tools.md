@@ -14,3 +14,7 @@ The goal of this page is to provide an overview of the LearnLib community and sh
 The following projects are listed in alphabetical order.
 
 * **Coal** (COmpositional Automata Learner, [link](https://doi.org/10.1007/978-3-031-30826-0_3), [link](https://zenodo.org/records/7777664)) is a tool for learning compositional systems that allows for *unknown* membership query results. Hypotheses are constructed via passive learning techniques or SAT solving.
+
+## Contributing
+
+If you would like to add a project to this list, feel free to open a pull request for [this page](https://github.com/LearnLib/learnlib.github.io/tree/main/{{ page.path }}).
