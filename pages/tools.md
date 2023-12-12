@@ -13,7 +13,9 @@ The goal of this page is to provide an overview of the LearnLib community and sh
 
 The following projects are listed in alphabetical order.
 
+* **C3AL** (Conflict-Aware Active Automata Learning, [link](https://doi.org/10.4204/EPTCS.390.10)) is an alternative to the MAT framework that treats conflicts (e.g., in noisy environments) as first-class citizens. It is [implemented](https://github.com/UCL-PPLV/learnlib) on top of LearnLib and extends previous work on [adaptive model learning](https://doi.org/10.1007/978-3-031-15629-8_10).
 * **Coal** (COmpositional Automata Learner, [link](https://doi.org/10.1007/978-3-031-30826-0_3), [link](https://zenodo.org/records/7777664)) is a tool for learning compositional systems that allows for *unknown* membership query results. Hypotheses are constructed via passive learning techniques or SAT solving.
+* **Prognosis** ([link](https://doi.org/10.1145/3452296.3472938), [link](https://github.com/PrognosisTool)) is a tool that focuses on the black-box analysis of network protocol implementations using LearnLib for learning models.
 
 ## Contributing
 
