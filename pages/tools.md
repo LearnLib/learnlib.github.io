@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Tools using Learning"
+title: "Tools using LearnLib"
 navbar-group: "Resources"
 ---
 
-## Tools using LearLib
+## Tools using LearnLib
 
 This page lists (external) tools that are connected to LearnLib or its related projects either by using them as is or extending them with new features.
 The goal of this page is to provide an overview of the LearnLib community and share information for fruitful collaborations in the future.
