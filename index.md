@@ -46,33 +46,31 @@ LearnLib provides a sophisticated set of active and passive learning algorithms 
 
 #### Learning algorithms
 
-| Algorithm (active)  | Target models               |     | Algorithm (passive) | Models                |
-|---------------------|-----------------------------|-----|---------------------|-----------------------|
-| AAAR                | `DFA` `Mealy` `Moore`       |     | OSTIA               | `SST`                 |
-| ADT                 | `Mealy`                     |     | RPNI                | `DFA` `Mealy` `Moore` |
-| DHC                 | `Mealy`                     |     | RPNI (EDSM)         | `DFA`                 |
-| Kearns & Vazirani   | `DFA` `Mealy`               |     | RPNI (MDL)          | `DFA`                 |
-| L* (incl. variants) | `DFA` `Mealy` `Moore`       |     |                     |                       |
-| NL*                 | `NFA`                       |     |                     |                       |
-| Observation Pack    | `DFA` `Mealy` `Moore` `VPA` |     |                     |                       |
-| OML                 | `DFA` `Mealy`               |     |                     |                       |
-| Procedural          | `SPA` `SBA` `SPMM`          |     |                     |                       |
-| TTT                 | `DFA` `Mealy` `Moore` `VPA` |     |                     |                       |
+| Algorithm (active)  | Target models               |     | Algorithm (passive)   | Models                |
+|---------------------|-----------------------------|-----|-----------------------|-----------------------|
+| AAAR                | `DFA` `Mealy` `Moore`       |     | OSTIA                 | `SST`                 |
+| ADT                 | `Mealy`                     |     | RPNI (incl. variants) | `DFA` `Mealy` `Moore` |
+| DHC                 | `Mealy`                     |     |                       |                       |
+| Kearns & Vazirani   | `DFA` `Mealy`               |     |                       |                       |
+| L* (incl. variants) | `DFA` `Mealy` `Moore`       |     |                       |                       |
+| NL*                 | `NFA`                       |     |                       |                       |
+| Observation Pack    | `DFA` `Mealy` `Moore` `VPA` |     |                       |                       |
+| OML                 | `DFA` `Mealy`               |     |                       |                       |
+| Procedural          | `SPA` `SBA` `SPMM`          |     |                       |                       |
+| TTT                 | `DFA` `Mealy` `Moore` `VPA` |     |                       |                       |
 
 #### Equivalence approximation strategies
 
 - Complete, depth-bounded exploration
 - Random words
 - Random walk
-- W-method
-- W-method, randomised
-- Wp-method
-- Wp-method, randomised
+- W-method (incl. variants)
+- Wp-method (incl. variants)
 
 #### More features
 
 - Query cache
+- Parallel oracles
 - Reuse filter
 - Abstract to concrete system mapping
 - Generic, extensible design
-- Logging subsystem
