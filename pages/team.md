@@ -7,10 +7,6 @@ title: "Team"
 
 The following people, in alphabetical order, are currently responsible for the maintenance and the development of LearnLib and its related projects.
 
-**Alexander Bainczyk**\
-_PhD Student_\
-TU Dortmund, Germany
-
 **Markus Frohme**\
 _Post-Doc_\
 TU Dortmund, Germany
