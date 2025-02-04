@@ -17,7 +17,7 @@ Furthermore, a plethora of graph-/automata-based algorithms is implemented, cove
 
 - graph theory (traversal, shortest paths, strongly-connected components)
 - automata theory (equivalence, minimization)
-- model checking (adaptive distinguishing sequences, W(p)Method, characterizing sets, state/transition covers, LTL checking (via [LTSMin](https://ltsmin.utwente.nl/) and M3C)
+- model checking (adaptive distinguishing sequences, (partial) W-method, characterizing sets, state/transition covers, LTL checking (via [LTSmin](https://ltsmin.utwente.nl/) and M3C)
 
 ## Usage
 
