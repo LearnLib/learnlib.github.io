@@ -21,14 +21,14 @@ In order to start using the latest, stable release of LearnLib in your **Maven**
   <dependency>
     <groupId>de.learnlib.distribution</groupId>
     <artifactId>learnlib-distribution</artifactId>
-    <version>0.17.0</version>
+    <version>0.18.0</version>
     <type>pom</type>
   </dependency>
 </dependencies>
 ```
 
 _Note: This dependency will add all components of LearnLib to your project.
-If you only need a subset, have a look at the [List of LearnLib Artifacts](https://github.com/LearnLib/learnlib/wiki/List-of-LearnLib-Artifacts) to get an overview of the individual modules available on **[Maven Central](http://mvnrepository.com/artifact/de.learnlib)**._
+If you only need a subset, have a look at LearnLib's [modules](https://learnlib.github.io/learnlib/maven-site/latest/apidocs/) which correspond to the individual artifacts available on **[Maven Central](http://mvnrepository.com/artifact/de.learnlib)**._
 
 If you are not using any build management, you can also download the [distribution artifacts](https://central.sonatype.com/search?q=g:de.learnlib.distribution/) of LearnLib, with and without its dependencies.
 
@@ -52,10 +52,11 @@ LearnLib provides a sophisticated set of active and passive learning algorithms 
 | ADT                 | `Mealy`                     |     | RPNI (incl. variants) | `DFA` `Mealy` `Moore` |
 | DHC                 | `Mealy`                     |     |                       |                       |
 | Kearns & Vazirani   | `DFA` `Mealy`               |     |                       |                       |
+| Lambda              | `DFA` `Mealy`               |     |                       |                       |
+| L#                  | `Mealy`                     |     |                       |                       |
 | L* (incl. variants) | `DFA` `Mealy` `Moore`       |     |                       |                       |
 | NL*                 | `NFA`                       |     |                       |                       |
 | Observation Pack    | `DFA` `Mealy` `Moore` `VPA` |     |                       |                       |
-| OML                 | `DFA` `Mealy`               |     |                       |                       |
 | Procedural          | `SPA` `SBA` `SPMM`          |     |                       |                       |
 | TTT                 | `DFA` `Mealy` `Moore` `VPA` |     |                       |                       |
 
