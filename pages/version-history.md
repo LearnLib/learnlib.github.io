@@ -8,7 +8,7 @@ navbar-group: "Resources"
 
 ### Main releases
 
-In the following table you find the latest three releases of LearnLib.
+In the following table you find the latest releases of LearnLib.
 All releases can be accessed via the [GitHub releases](https://github.com/LearnLib/learnlib/releases) page or
 via [Maven Central](http://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22de.learnlib.distribution%22%20AND%20a%3A%22learnlib-distribution%22).
 
