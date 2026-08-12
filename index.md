@@ -21,7 +21,7 @@ In order to start using the latest, stable release of LearnLib in your **Maven**
   <dependency>
     <groupId>de.learnlib.distribution</groupId>
     <artifactId>learnlib-distribution</artifactId>
-    <version>0.18.0</version>
+    <version>19.0.0</version>
     <type>pom</type>
   </dependency>
 </dependencies>
@@ -31,6 +31,8 @@ _Note: This dependency will add all components of LearnLib to your project.
 If you only need a subset, have a look at LearnLib's [modules](https://learnlib.github.io/learnlib/maven-site/latest/apidocs/) which correspond to the individual artifacts available on **[Maven Central](http://mvnrepository.com/artifact/de.learnlib)**._
 
 If you are not using any build management, you can also download the [distribution artifacts](https://central.sonatype.com/search?q=g:de.learnlib.distribution/) of LearnLib, with and without its dependencies.
+
+If you want to use LearnLib directly without any development, check out the native command-line binaries at the [GitHub releases](https://github.com/LearnLib/learnlib/releases) page.
 
 [Examples](https://github.com/LearnLib/learnlib/tree/develop/examples/src/main/java/de/learnlib/example){: .btn .btn-sm .btn-outline-primary}
 [Wiki](https://github.com/LearnLib/learnlib/wiki){: .btn .btn-sm .btn-outline-primary}
@@ -46,19 +48,20 @@ LearnLib provides a sophisticated set of active and passive learning algorithms 
 
 #### Learning algorithms
 
-| Algorithm (active)  | Target models               |     | Algorithm (passive)   | Models                |
-|---------------------|-----------------------------|-----|-----------------------|-----------------------|
-| AAAR                | `DFA` `Mealy` `Moore`       |     | OSTIA                 | `SST`                 |
-| ADT                 | `Mealy`                     |     | RPNI (incl. variants) | `DFA` `Mealy` `Moore` |
-| DHC                 | `Mealy`                     |     |                       |                       |
-| Kearns & Vazirani   | `DFA` `Mealy`               |     |                       |                       |
-| Lambda              | `DFA` `Mealy`               |     |                       |                       |
-| L#                  | `Mealy`                     |     |                       |                       |
-| L* (incl. variants) | `DFA` `Mealy` `Moore`       |     |                       |                       |
-| NL*                 | `NFA`                       |     |                       |                       |
-| Observation Pack    | `DFA` `Mealy` `Moore` `VPA` |     |                       |                       |
-| Procedural          | `SPA` `SBA` `SPMM`          |     |                       |                       |
-| TTT                 | `DFA` `Mealy` `Moore` `VPA` |     |                       |                       |
+| Algorithm (active)  | Target models                |     | Algorithm (passive)   | Models                |
+|---------------------|------------------------------|-----|-----------------------|-----------------------|
+| AAAR                | `DFA` `Mealy` `Moore`        |     | OSTIA                 | `SST`                 |
+| ADT                 | `Mealy`                      |     | RPNI (incl. variants) | `DFA` `Mealy` `Moore` |
+| DHC                 | `Mealy`                      |     |                       |                       |
+| Kearns & Vazirani   | `DFA` `Mealy`                |     |                       |                       |
+| Lambda              | `DFA` `Mealy`                |     |                       |                       |
+| L#                  | `Mealy`                      |     |                       |                       |
+| L<sup>s</sup>       | `Mealy`                      |     |                       |                       |
+| L* (incl. variants) | `DFA` `Mealy` `Moore` `MMLT` |     |                       |                       |
+| NL*                 | `NFA`                        |     |                       |                       |
+| Observation Pack    | `DFA` `Mealy` `Moore` `VPA`  |     |                       |                       |
+| Procedural          | `SPA` `SBA` `SPMM`           |     |                       |                       |
+| TTT                 | `DFA` `Mealy` `Moore` `VPA`  |     |                       |                       |
 
 #### Equivalence approximation strategies
 
@@ -66,7 +69,8 @@ LearnLib provides a sophisticated set of active and passive learning algorithms 
 - Random words
 - Random walk
 - (partial) W-method (incl. variants)
-- Black-Box Checking (via [LTSmin](https://ltsmin.utwente.nl/))
+- (kWay-) state and transition covers
+- Black-Box Checking (via [LTSmin](https://ltsmin.utwente.nl/), [M3C](https://doi.org/10.1007/978-3-030-00244-2_15), and [ADD-Lib](https://add-lib.scce.info/))
 
 #### More features
 
@@ -75,4 +79,5 @@ LearnLib provides a sophisticated set of active and passive learning algorithms 
 - Statistics
 - Reuse filter
 - Abstract to concrete symbol mapping
+- Automated alphabet abstraction refinement
 - Generic, extensible design

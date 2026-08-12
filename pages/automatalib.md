@@ -10,14 +10,15 @@ navbar-group: "Projects"
 ## AutomataLib
 
 AutomataLib supports modeling a variety of graph-based structures.
-Currently, it covers generic transition systems, Deterministic Finite Automata (DFA) and Mealy machines as well as more advanced structures such as Visibly Pushdown Automata (VPAs) and procedural systems (SPAs, SBAs, SPMMs).
+Currently, it covers generic transition systems, Deterministic Finite Automata (DFA) and Mealy machines as well as more advanced structures such as Modal Transition Systems (MTSs), Mealy machines with local timers (MMLTs), Visibly Pushdown Automata (VPAs) and Procedural Systems (SPAs, SBAs, SPMMs).
 
 Models of AutomataLib can be (de-)serialized (from) to one of the various supported serialization formats and may be visualized using either the GraphViz or JUNG library.
 Furthermore, a plethora of graph-/automata-based algorithms is implemented, covering the following topics:
 
 - graph theory (traversal, shortest paths, strongly-connected components)
 - automata theory (bisimulation, equivalence, minimization)
-- model checking (adaptive distinguishing sequences, (partial) W-method, characterizing sets, state/transition covers, LTL checking (via [LTSmin](https://ltsmin.utwente.nl/) and M3C)
+- model-based testing (adaptive distinguishing sequences, (partial) W-method, characterizing sets, (kWay-) state/transition covers)
+- model verification (LTL checking (via [LTSmin](https://ltsmin.utwente.nl/), CTL & µ-calculus checking (via [M3C](https://doi.org/10.1007/978-3-030-00244-2_15) + [ADD-Lib](https://add-lib.scce.info/))
 
 ## Usage
 
@@ -29,7 +30,7 @@ In order to start using the latest, stable release of AutomataLib in your **Mave
   <dependency>
     <groupId>net.automatalib.distribution</groupId>
     <artifactId>automata-distribution</artifactId>
-    <version>0.12.0</version>
+    <version>13.0.0</version>
     <type>pom</type>
   </dependency>
 </dependencies>
